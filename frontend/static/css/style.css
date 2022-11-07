@@ -19,6 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .main-content {
@@ -27,6 +28,17 @@ body {
   grid-template-rows: 1fr 1fr;
   row-gap: 3rem;
   place-items: center;
+}
+.main-res {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 3rem;
+  place-items: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 3rem;
 }
 
 .main-head {
@@ -44,7 +56,7 @@ body {
   height: 20%;
   align-self: center;
   font-family: "Press Start 2P", sans-serif;
-  font-size: 1.75rem
+  font-size: 1.75rem;
 }
 
 .btn--sbm {
@@ -57,7 +69,7 @@ body {
   font-family: inherit;
   padding: 1.5rem 2.5rem;
   cursor: pointer;
-  width: 30%;
+  width: 20rem;
 }
 
 .return-button {
@@ -72,4 +84,17 @@ body {
 
 .btn--sbm:hover {
   background-color: #ccc;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8rem;
 }
