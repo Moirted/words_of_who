@@ -48,6 +48,8 @@ def wow_cheat_2(s_in):
         s = rus_dict.readline().rstrip()
         if not s:
             break
+        if len(s) <= 2:
+            continue
         flag = True
         for l in range(len(s)):
             if (s[l] in inp) and (s.count(s[l]) <= inp.count(s[l])):
