@@ -31,14 +31,14 @@ body {
 }
 .main-res {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr  1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   row-gap: 3rem;
   column-gap: 3rem;
   place-items: center;
   justify-items: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 1.7rem;
   margin-top: 1.5rem;
 }
 

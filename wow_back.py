@@ -59,7 +59,5 @@ def wow_cheat_2(s_in):
                 break
         if flag:
             words.append(s)
-
     rus_dict.close()
-
     return words
