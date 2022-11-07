@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 3rem;
+  place-items: center;
+}
+
+.main-head {
+  grid-column: 1/-1;
+  grid-row: 1;
+  align-self: center;
+  text-align: center;
+  justify-self: end;
+}
+
+.input {
+  grid-column: 1/-1;
+  grid-row: 2;
+  width: 50%;
+  height: 20%;
+  align-self: center;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.75rem
+}
+
+.btn--sbm {
+  grid-column: 1/-1;
+  grid-row: 3;
+  border: None;
+  background-color: #eee;
+  color: #222;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  width: 30%;
+}
+
+.return-button {
+  grid-column: 2/-1;
+  grid-row: 2;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 1rem 5rem;
+  cursor: pointer;
+  width: 5%;
+}
+
+.btn--sbm:hover {
+  background-color: #ccc;
+}

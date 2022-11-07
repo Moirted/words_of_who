@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <title>HACKS</title>
+  </head>
+  <body>
+    <form action="{{ url_for('hm_pg')}}" method="post" class="main-content"
+    <label for="s_in">
+      <h1 class="main-head">Вводи буквы.</br>
+        <br>Вводи каждую через пробел.</br>
+        <br>Из этих букв я составлю слова.</br>
+      </h1>
+    </label>
+    <input
+      type="text"
+      id="s_in"
+      name="fins"
+      class="input"
+      placeholder="а п о ж у й х л и"/>
+    <button type="submit" class="btn--sbm">Составить</button>
+  </body>
+</html>
