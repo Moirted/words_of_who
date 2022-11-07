@@ -1,6 +1,6 @@
 from flask import *
 
-from wow_back import wow_cheat
+from wow_back import wow_cheat_2
 
 app = Flask(__name__, template_folder='./frontend/templates', static_folder='./frontend/static')
 
@@ -9,7 +9,7 @@ app = Flask(__name__, template_folder='./frontend/templates', static_folder='./f
 def hm_pg():
     if request.method == "POST":
         s_in = request.form.get("fins")
-        return render_template("page_res.html", content=wow_cheat(s_in))
+        return render_template("page_res.html", content=wow_cheat_2(s_in))
     return render_template("page_home.html")
 
 
