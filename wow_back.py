@@ -38,3 +38,26 @@ def wow_cheat(s_in):
 
     words.sort(key=len)
     return words
+
+
+def wow_cheat_2(s_in):
+    inp = s_in.lower().split(' ')
+    rus_dict = open("russian_nouns.txt", 'r', encoding='utf8')
+    words = []
+    while True:
+        s = rus_dict.readline().rstrip()
+        if not s:
+            break
+        flag = True
+        for l in range(len(s)):
+            if (s[l] in inp) and (s.count(s[l]) <= inp.count(s[l])):
+                continue
+            else:
+                flag = False
+                break
+        if flag:
+            words.append(s)
+
+    rus_dict.close()
+
+    return words
